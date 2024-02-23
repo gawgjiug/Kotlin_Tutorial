@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/simple_Listview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-</ListView>
+    tools:context=".SimpleAdapterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/simple_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".MainActivity">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_simpleToAdd"
+            android:backgroundTint="@color/black"
+            android:text="click!"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
