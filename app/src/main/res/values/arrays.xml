@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="job">
+        <item>의사</item>
+        <item>변호사</item>
+        <item>판사</item>
+        <item>교사</item>
+        <item>개발자</item>
+    </string-array>
+</resources>
