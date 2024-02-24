@@ -10,31 +10,45 @@
     <ListView
         android:id="@+id/main_list"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="580dp"
+        />
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:orientation="horizontal">
         <EditText
+            android:textSize="15sp"
+            android:hint="추가 할 목록을 입력하세요"
             android:id="@+id/edit"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:inputType="text"/>
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="add"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <Button
-            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
             android:id="@+id/btnToCustom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next!"/>
+            android:backgroundTint="@color/black"
+            android:text="Next!" />
+
     </LinearLayout>
 
 </LinearLayout>

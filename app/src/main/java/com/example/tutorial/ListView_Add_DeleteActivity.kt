@@ -1,12 +1,15 @@
 package com.example.tutorial
 
 import android.app.AlertDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ListView
+import com.example.tutorial.databinding.ActivityListViewAddDeleteBinding
 
 class ListView_Add_DeleteActivity : AppCompatActivity() {
     var todo = mutableListOf<String>()
@@ -15,9 +18,11 @@ class ListView_Add_DeleteActivity : AppCompatActivity() {
     lateinit var editText: EditText
     lateinit var button: Button
 
+    val binding by lazy { ActivityListViewAddDeleteBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list_view_add_delete)
+        setContentView(binding.root)
 
         listView = findViewById(R.id.main_list)
         editText = findViewById(R.id.edit)
@@ -49,5 +54,16 @@ class ListView_Add_DeleteActivity : AppCompatActivity() {
             editText.text.clear()
             adapter.notifyDataSetChanged()
         }
+
+        binding.btnToCustom.setOnClickListener {
+            Log.d("ListView_Add_DeleteActivity", "버튼이 클릭되었습니다. Custom_ListView_Activity로 전환을 시도합니다.")
+            val intent = Intent(this, Custom_ListView_Activity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+
     }
 }
