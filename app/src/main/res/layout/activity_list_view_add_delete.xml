@@ -29,6 +29,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="add"/>
+        <Button
+            android:backgroundTint="@color/black"
+            android:id="@+id/btnToCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next!"/>
     </LinearLayout>
 
 </LinearLayout>
