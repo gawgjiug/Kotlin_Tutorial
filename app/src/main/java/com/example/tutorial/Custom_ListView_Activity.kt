@@ -15,8 +15,8 @@ class Custom_ListView_Activity : AppCompatActivity() {
         mutableList.add(DriveVO("file", "db.zip", "2월 6일"))
         mutableList.add(DriveVO("img", "exam.png", "2월 6일"))
 
-        val listView = findViewById<ListView>(R.id.custom_list)
-        val adapter = DriveAdapter(this, R.layout.custom_item, mutableList)
-        listView.adapter = adapter
+//        val listView = findViewById<ListView>(R.id.custom_list)
+//        val adapter = DriveAdapter(this, R.layout.custom_item, mutableList)
+//        listView.adapter = adapter
     }
 }
