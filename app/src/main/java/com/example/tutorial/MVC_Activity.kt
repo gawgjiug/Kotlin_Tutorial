@@ -27,6 +27,8 @@ class MVC_Activity : AppCompatActivity() {
 
         model.inputPassword(i)
 
+        //View의 입력을 받아서 View를 업데이트함 , 동시에 inputPassword(Model) 메서드에 i 값을 전달하여 Model은 받은 데이터를 처리함.
+
         if (model.password.size == 4 && model.checkPassword()){
             //4자리 이상 비밀번호가 1234
 
