@@ -56,8 +56,8 @@ class ListView_Add_DeleteActivity : AppCompatActivity() {
         }
 
         binding.btnToCustom.setOnClickListener {
-            Log.d("ListView_Add_DeleteActivity", "버튼이 클릭되었습니다. Custom_ListView_Activity로 전환을 시도합니다.")
-            val intent = Intent(this, Custom_ListView_Activity::class.java)
+            Log.d("ListView_Add_DeleteActivity", "버튼이 클릭되었습니다.MVC_Activity로 전환을 시도합니다.")
+            val intent = Intent(this, MVC_Activity::class.java)
             startActivity(intent)
         }
 
